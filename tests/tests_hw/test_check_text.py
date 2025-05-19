@@ -4,6 +4,7 @@ from components.components import WebElement
 
 
 
+
 def test_check_footer(browser):
     demo_qa_page = DemoQa(browser)
     demo_qa_page.visit()
