@@ -1,7 +1,7 @@
 from pages.accordion import Accordion
 import time
 
-####
+
 def test_visible_accordion(browser):
     demo_qa_page = Accordion(browser)
     demo_qa_page.visit()
