@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 # import time
+import logging
 
 
 class BasePage:
@@ -35,4 +36,12 @@ class BasePage:
 
     def get_title(self):
         self.driver.title()
+
+    def allert(self):
+        try:
+            return self.driver.switch_to.allert
+        except Exception as ex:
+            logging.log(1, ex)
+            return False
+
 
